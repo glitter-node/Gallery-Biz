@@ -1,0 +1,88 @@
+{
+  "latest_posts": "Latest updates",
+  "hero": {
+    "kicker": "Featured exhibition",
+    "title": "Collectors of Light",
+    "description": "This season's lead exhibition brings painting, photography, and installation into a single sensory rhythm. The opening screen is structured around the current show so first-time visitors can immediately read the tone of the space.",
+    "date": "2026.04.18 - 2026.07.21",
+    "location": "100 Yesul-ro, Jung-gu, Seoul, Glitter Gallery Main Hall",
+    "primary_cta": "View current exhibition",
+    "secondary_cta": "Plan your visit",
+    "visual_kicker": "Main visual",
+    "visual_description": "The hero image area is built as a visual placeholder so the layout keeps its ratio and mood even before a real exhibition image is connected."
+  },
+  "featured": {
+    "section_kicker": "Featured exhibition",
+    "section_title": "The show we want to surface first",
+    "card_status": "Current exhibition",
+    "title": "Collectors of Light",
+    "date": "2026.04.18 - 2026.07.21",
+    "description": "A season-leading exhibition where painting, photography, and installation are tuned to read as one scene.",
+    "cta": "View exhibition details"
+  },
+  "exhibition_list": {
+    "section_kicker": "Exhibition list",
+    "section_title": "Cards that read status and schedule together",
+    "current_badge": "Current exhibition",
+    "current_date": "2026.04.18 - 2026.07.21",
+    "current_title": "Collectors of Light",
+    "current_description": "A large group show designed so visitors experience different densities along the viewing path.",
+    "upcoming_date": "2026.08.02 - 2026.10.11",
+    "upcoming_title": "Quiet Surfaces",
+    "upcoming_description": "An upcoming exhibition card that builds anticipation for the next season while keeping schedule and tone visible.",
+    "archive_badge": "Archive",
+    "archive_title": "Winter Archive",
+    "archive_description": "Closed exhibitions remain inside the same card system so the archive retains continuity even when live data is missing."
+  },
+  "artists": {
+    "section_kicker": "Artist highlights",
+    "section_title": "Artists shaping the texture of the space",
+    "artist1_role": "Painting",
+    "artist1_name": "Kim Harin",
+    "artist1_description": "Explores the thickness of surfaces where light lingers and carefully stages the sensory difference between distant and close viewing.",
+    "artist2_role": "Photography",
+    "artist2_name": "Park Doyoon",
+    "artist2_description": "Records the grain of time by placing urban afterglow against quiet interiors, supporting the exhibition's lyricism.",
+    "artist3_role": "Installation",
+    "artist3_name": "Lee Sumin",
+    "artist3_description": "Treats viewer movement and sightline height as part of the exhibition and binds the entire room into one scene."
+  },
+  "collection": {
+    "section_kicker": "Collection",
+    "section_title": "Artwork card grid",
+    "item1_meta": "Mixed media, 2024",
+    "item1_title": "Still Wave",
+    "item1_description": "A work built from thin layers of color that leave a small motion inside an otherwise still surface.",
+    "item2_meta": "Photography, 2023",
+    "item2_title": "Window After Evening",
+    "item2_description": "A photo series that records the indoor warmth left behind after daylight has faded.",
+    "item3_meta": "Drawing, 2025",
+    "item3_title": "Overlapping Coordinates",
+    "item3_description": "A drawing that suggests direction through the tension between line and blank space while preserving card density when live data is absent."
+  },
+  "space": {
+    "section_kicker": "About the space",
+    "section_title": "A layout where the work breathes first",
+    "description": "Glitter Gallery builds atmosphere through restraint, material texture, and whitespace, while keeping exhibition information legible without breaking that flow.",
+    "cta": "Explore the space"
+  },
+  "visit": {
+    "section_kicker": "Visit",
+    "section_title": "What to confirm before arrival",
+    "hours": "Tue-Sun 10:00-18:00 / Closed on Monday",
+    "address": "2F, 100 Yesul-ro, Jung-gu, Seoul / 7-minute walk from Euljiro 3-ga Station Line 3",
+    "description": "Schedules may change, so visitors should review the latest operating notice before arriving.",
+    "cta": "View full visit info"
+  },
+  "news": {
+    "section_kicker": "Latest updates",
+    "section_title": "Operating notices and program news"
+  },
+  "cta": {
+    "section_kicker": "Visit prompt",
+    "section_title": "If you want to experience the exhibition in person, check visit information and contact first.",
+    "description": "The footer CTA links viewing hours, location, program guidance, and inquiry flow into one final action path.",
+    "visit_cta": "View visit info",
+    "contact_cta": "Contact us"
+  }
+}

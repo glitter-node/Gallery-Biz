@@ -1,0 +1,16 @@
+{
+  "site_name": "Glitter Gallery",
+  "site_tagline": "빛과 여백으로 전시의 감정을 전달하는 공간",
+  "cta_view_exhibitions": "전시 보기",
+  "cta_plan_visit": "방문 안내",
+  "controls": {
+    "font_aria_label": "글꼴 선택",
+    "font_default": "기본",
+    "font_gothic": "고딕",
+    "font_rounded": "둥근",
+    "theme_aria_label": "템플릿 모드 선택",
+    "theme_light": "밝음",
+    "theme_dim": "미명",
+    "theme_dark": "어둠"
+  }
+}

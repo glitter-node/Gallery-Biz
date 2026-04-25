@@ -1,0 +1,50 @@
+{
+  "name": "glitter-gallery",
+  "version": "0.1.0-beta.2",
+  "description": "Museum and gallery editorial user template for Gnuboard7",
+  "type": "module",
+  "files": [
+    "template.json",
+    "routes.json",
+    "layouts/**",
+    "lang/**",
+    "seo-config.json",
+    "preview/**",
+    "dist/**",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "g7",
+    "template",
+    "gallery",
+    "museum",
+    "exhibition",
+    "editorial"
+  ],
+  "author": "GlitterBz",
+  "license": "MIT",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.1.0",
+    "jsdom": "^26.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.0",
+    "vite": "^7.0.4",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^4.0.6"
+  }
+}

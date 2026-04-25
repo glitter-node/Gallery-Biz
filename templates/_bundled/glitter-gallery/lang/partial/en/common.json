@@ -1,0 +1,16 @@
+{
+  "site_name": "Glitter Gallery",
+  "site_tagline": "A quiet space shaped by light, texture, and exhibition stories",
+  "cta_view_exhibitions": "View Exhibitions",
+  "cta_plan_visit": "Plan Your Visit",
+  "controls": {
+    "font_aria_label": "Select font mode",
+    "font_default": "Default",
+    "font_gothic": "Gothic",
+    "font_rounded": "Rounded",
+    "theme_aria_label": "Select template theme",
+    "theme_light": "Light",
+    "theme_dim": "Dim",
+    "theme_dark": "Dark"
+  }
+}

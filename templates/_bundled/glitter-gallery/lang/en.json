@@ -1,0 +1,20 @@
+{
+  "common": {
+    "$partial": "partial/en/common.json"
+  },
+  "home": {
+    "$partial": "partial/en/home.json"
+  },
+  "nav": {
+    "$partial": "partial/en/nav.json"
+  },
+  "footer": {
+    "$partial": "partial/en/footer.json"
+  },
+  "pages": {
+    "$partial": "partial/en/pages.json"
+  },
+  "error": {
+    "$partial": "partial/en/error.json"
+  }
+}

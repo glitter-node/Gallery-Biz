@@ -1,0 +1,88 @@
+{
+  "latest_posts": "최신 소식",
+  "hero": {
+    "kicker": "대표 전시",
+    "title": "빛의 수집가들",
+    "description": "회화, 사진, 설치가 하나의 감각으로 이어지는 시즌 대표 전시입니다. 첫 방문자도 전시의 분위기와 공간의 톤을 한 화면에서 읽을 수 있도록 홈 첫 화면을 대표 전시 중심으로 구성했습니다.",
+    "date": "2026.04.18 - 2026.07.21",
+    "location": "서울시 중구 예술로 100, Glitter Gallery Main Hall",
+    "primary_cta": "현재 전시 보기",
+    "secondary_cta": "방문 계획하기",
+    "visual_kicker": "메인 비주얼",
+    "visual_description": "대표 이미지 영역은 실제 이미지가 없어도 비율과 분위기를 유지하도록 비주얼 플레이스홀더로 구성했습니다. 추후 전시 대표 이미지를 연결해도 레이아웃 흐름이 깨지지 않습니다."
+  },
+  "featured": {
+    "section_kicker": "대표 전시",
+    "section_title": "지금 가장 먼저 보여주고 싶은 전시",
+    "card_status": "현재 전시",
+    "title": "빛의 수집가들",
+    "date": "2026.04.18 - 2026.07.21",
+    "description": "회화, 사진, 설치가 하나의 감각으로 이어지는 시즌 대표 전시입니다. 서로 다른 매체가 한 장면처럼 읽히도록 조율된 공간 구성을 보여줍니다.",
+    "cta": "전시 상세 보기"
+  },
+  "exhibition_list": {
+    "section_kicker": "전시 리스트",
+    "section_title": "기간과 상태를 함께 읽는 카드 목록",
+    "current_badge": "현재 전시",
+    "current_date": "2026.04.18 - 2026.07.21",
+    "current_title": "빛의 수집가들",
+    "current_description": "계절의 밝기와 실내 조명을 함께 큐레이션한 대형 그룹전으로, 관람 동선에 따라 다른 밀도를 경험하도록 설계했습니다.",
+    "upcoming_date": "2026.08.02 - 2026.10.11",
+    "upcoming_title": "조용한 표면들",
+    "upcoming_description": "예정 전시를 미리 공개해 다음 시즌 기대감을 형성하는 카드입니다. 공간의 톤과 일정 정보를 함께 정리해 방문 계획에 도움을 줍니다.",
+    "archive_badge": "아카이브",
+    "archive_title": "겨울의 기록 보관소",
+    "archive_description": "종료된 전시도 동일 카드 시스템 안에 남겨 기록성을 유지합니다. 데이터가 없을 때도 홈의 리듬이 비지 않도록 기본 카드 세트를 제공합니다."
+  },
+  "artists": {
+    "section_kicker": "작가 하이라이트",
+    "section_title": "공간의 결을 함께 만드는 작가들",
+    "artist1_role": "회화",
+    "artist1_name": "김하린",
+    "artist1_description": "빛이 머무는 표면의 두께를 탐구하며, 멀리서 볼 때와 가까이 다가갔을 때의 감각 차이를 세밀하게 설계합니다.",
+    "artist2_role": "사진",
+    "artist2_name": "박도윤",
+    "artist2_description": "도시의 잔광과 실내의 고요한 분위기를 병치해 시간의 결을 기록합니다. 전시의 서정성을 안정적으로 받쳐 주는 작가입니다.",
+    "artist3_role": "설치",
+    "artist3_name": "이수민",
+    "artist3_description": "관람자의 이동 속도와 시선의 높이를 전시의 일부로 다루며, 공간 전체를 하나의 장면으로 묶는 역할을 수행합니다."
+  },
+  "collection": {
+    "section_kicker": "소장품",
+    "section_title": "작품 카드 그리드",
+    "item1_meta": "혼합 재료, 2024",
+    "item1_title": "정지된 파도",
+    "item1_description": "수면의 잔광처럼 흔들리는 표면을 얇은 색층으로 축적한 작품입니다. 정적인 화면 안에 미세한 움직임을 남겨 관람자의 시선을 오래 머물게 합니다.",
+    "item2_meta": "사진, 2023",
+    "item2_title": "저녁 이후의 창문",
+    "item2_description": "빛이 사라진 뒤에도 남아 있는 실내의 온도를 기록한 사진 연작입니다. 차분한 색조가 공간의 분위기를 안정적으로 이어 줍니다.",
+    "item3_meta": "드로잉, 2025",
+    "item3_title": "겹쳐지는 좌표",
+    "item3_description": "선과 여백의 긴장을 통해 이동의 방향을 암시하는 작업입니다. 데이터가 없을 때도 동일한 카드 밀도를 유지하는 기본 컬렉션 예시로 배치했습니다."
+  },
+  "space": {
+    "section_kicker": "공간 소개",
+    "section_title": "작품의 호흡이 먼저 읽히는 공간 구성",
+    "description": "과도한 장식 없이 여백과 재료감을 중심으로 분위기를 만들고, 전시 정보는 그 흐름을 해치지 않는 수준으로 정리하는 것이 Glitter Gallery의 기본 방향입니다.",
+    "cta": "공간 더 보기"
+  },
+  "visit": {
+    "section_kicker": "방문 안내",
+    "section_title": "방문 전 꼭 확인할 정보",
+    "hours": "화요일-일요일 10:00-18:00 / 월요일 휴관",
+    "address": "서울시 중구 예술로 100, 2층 / 지하철 3호선 을지로3가역 도보 7분",
+    "description": "전시와 프로그램 일정은 변동될 수 있으므로 방문 전 운영 공지를 함께 확인해 주세요.",
+    "cta": "방문안내 전체 보기"
+  },
+  "news": {
+    "section_kicker": "최신 소식",
+    "section_title": "운영 공지와 프로그램 소식"
+  },
+  "cta": {
+    "section_kicker": "방문 유도",
+    "section_title": "전시를 직접 보고 싶다면, 방문안내와 문의를 먼저 확인해 주세요",
+    "description": "관람 시간, 위치, 프로그램 안내, 협업 및 대관 문의까지 하나의 흐름으로 이어질 수 있도록 홈 화면 하단 CTA를 배치했습니다.",
+    "visit_cta": "방문안내 보기",
+    "contact_cta": "문의하기"
+  }
+}

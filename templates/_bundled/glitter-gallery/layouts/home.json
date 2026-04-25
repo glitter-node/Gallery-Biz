@@ -1,0 +1,1149 @@
+{
+  "version": "1.0.0",
+  "layout_name": "home",
+  "permissions": [],
+  "extends": "_user_base",
+  "meta": {
+    "title": "$t:nav.home",
+    "seo": {
+      "enabled": true,
+      "data_sources": [
+        "latest_news"
+      ],
+      "priority": 1,
+      "changefreq": "daily",
+      "og": {
+        "type": "website"
+      }
+    }
+  },
+  "data_sources": [
+    {
+      "id": "latest_news",
+      "type": "api",
+      "endpoint": "/api/modules/sirsoft-board/boards/posts/recent?limit=3",
+      "method": "GET",
+      "auto_fetch": true,
+      "loading_strategy": "progressive",
+      "errorHandling": {
+        "fallback": {
+          "data": []
+        }
+      },
+      "fallback": {
+        "data": [
+          {
+            "date": "2026-04-18",
+            "title": "오프닝 리셉션 안내",
+            "summary": "새 시즌 전시 오프닝 일정과 현장 운영 정보를 먼저 확인할 수 있도록 핵심 공지를 요약했습니다."
+          },
+          {
+            "date": "2026-04-12",
+            "title": "도슨트 프로그램 예약 오픈",
+            "summary": "주말 관람객을 위한 도슨트 프로그램 예약이 시작되었습니다. 방문 전 시간대와 인원 제한을 확인해 주세요."
+          },
+          {
+            "date": "2026-04-05",
+            "title": "공간 점검에 따른 운영 시간 조정",
+            "summary": "공간 점검으로 일부 날짜의 운영 시간이 변경됩니다. 헛걸음을 줄이기 위해 변경 일정을 함께 안내합니다."
+          }
+        ]
+      }
+    }
+  ],
+  "slots": {
+    "content": [
+      {
+        "type": "basic",
+        "name": "Div",
+        "props": {
+          "className": "gallery-page-frame"
+        },
+        "children": [
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-surface gallery-hero"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-hero-inner"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-hero-copy"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "$t:home.hero.kicker",
+                        "props": {
+                          "className": "gallery-kicker"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H1",
+                        "text": "$t:home.hero.title",
+                        "props": {
+                          "className": "gallery-title-xl"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "$t:home.hero.description",
+                        "props": {
+                          "className": "gallery-body-lg"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "$t:home.hero.date",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "$t:home.hero.location",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-actions"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Button",
+                            "text": "전시 보기",
+                            "props": {
+                              "type": "button",
+                              "className": "gallery-button-ghost gallery-mobile-link"
+                            },
+                            "actions": [
+                              {
+                                "type": "click",
+                                "handler": "navigate",
+                                "params": {
+                                  "path": "/exhibitions",
+                                  "hash": "main_content_area"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "type": "basic",
+                            "name": "Button",
+                            "text": "작가 보기",
+                            "props": {
+                              "type": "button",
+                              "className": "gallery-button-ghost gallery-mobile-link"
+                            },
+                            "actions": [
+                              {
+                                "type": "click",
+                                "handler": "navigate",
+                                "params": {
+                                  "path": "/artists",
+                                  "hash": "main_content_area"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "type": "basic",
+                            "name": "Button",
+                            "text": "소식 보기",
+                            "props": {
+                              "type": "button",
+                              "className": "gallery-button-ghost gallery-mobile-link"
+                            },
+                            "actions": [
+                              {
+                                "type": "click",
+                                "handler": "navigate",
+                                "params": {
+                                  "path": "/news",
+                                  "hash": "main_content_area"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-card gallery-card-hero"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media-soft"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "$t:home.hero.visual_kicker",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "$t:home.hero.visual_description",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-section-heading"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "$t:home.featured.section_kicker",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "$t:home.featured.section_title",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-surface gallery-hero"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-hero-inner"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-hero-copy"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "$t:home.featured.card_status",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H3",
+                            "text": "$t:home.hero.title",
+                            "props": {
+                              "className": "gallery-title-lg"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "$t:home.hero.date",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "$t:home.featured.description",
+                            "props": {
+                              "className": "gallery-body-lg"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "Div",
+                            "props": {
+                              "className": "gallery-actions"
+                            },
+                            "children": [
+                              {
+                                "type": "basic",
+                                "name": "A",
+                                "text": "$t:home.featured.cta",
+                                "props": {
+                                  "href": "/exhibitions",
+                                  "className": "gallery-button"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media-soft"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-section-heading"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "$t:home.exhibition_list.section_kicker",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "$t:home.exhibition_list.section_title",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-listing-grid"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-muted gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media gallery-card-media-soft"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Div",
+                            "props": {
+                              "className": "gallery-card-media-overlay"
+                            },
+                            "children": [
+                              {
+                                "type": "basic",
+                                "name": "Span",
+                                "text": "$t:home.featured.card_status",
+                                "props": {
+                                  "className": "gallery-status-pill"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "$t:home.hero.date",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H3",
+                            "text": "$t:home.hero.title",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "$t:home.exhibition_list.current_description",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "$t:home.exhibition_list.upcoming_date",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H3",
+                            "text": "$t:home.exhibition_list.upcoming_title",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "$t:home.exhibition_list.upcoming_description",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Article",
+                    "props": {
+                      "className": "gallery-card gallery-card-hover"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media gallery-card-media-soft"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-header"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "$t:home.exhibition_list.archive_badge",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H3",
+                            "text": "$t:home.exhibition_list.archive_title",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "$t:home.exhibition_list.archive_description",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-section-heading"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "$t:home.artists.section_kicker",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "$t:home.artists.section_title",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-card-grid"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-card gallery-card-muted"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "$t:home.artists.artist1_role",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "$t:home.artists.artist1_name",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "$t:home.artists.artist1_description",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-card gallery-card-muted"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media gallery-card-media-soft"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "$t:home.artists.artist2_role",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "$t:home.artists.artist2_name",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "$t:home.artists.artist2_description",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-card gallery-card-muted"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "$t:home.artists.artist3_role",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "$t:home.artists.artist3_name",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "$t:home.artists.artist3_description",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-section-heading"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "$t:home.collection.section_kicker",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "$t:home.collection.section_title",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-card-grid gallery-grid-three"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "$t:home.collection.item1_meta",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "$t:home.collection.item1_title",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "$t:home.collection.item1_description",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media gallery-card-media-soft"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "$t:home.collection.item2_meta",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "$t:home.collection.item2_title",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "$t:home.collection.item2_description",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-card"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card-media"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "Span",
+                        "text": "$t:home.collection.item3_meta",
+                        "props": {
+                          "className": "gallery-meta"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "H3",
+                        "text": "$t:home.collection.item3_title",
+                        "props": {
+                          "className": "gallery-title-md"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "P",
+                        "text": "$t:home.collection.item3_description",
+                        "props": {
+                          "className": "gallery-body"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Div",
+            "props": {
+              "className": "gallery-info-grid"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Section",
+                "props": {
+                  "className": "gallery-card gallery-card-hero"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "$t:home.space.section_kicker",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H3",
+                    "text": "$t:home.space.section_title",
+                    "props": {
+                      "className": "gallery-title-md"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "$t:home.space.description",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "A",
+                    "text": "$t:home.space.cta",
+                    "props": {
+                      "href": "/about",
+                      "className": "gallery-button-ghost"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "name": "Section",
+                "props": {
+                  "className": "gallery-card gallery-card-hero"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "$t:home.visit.section_kicker",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H3",
+                    "text": "$t:home.visit.section_title",
+                    "props": {
+                      "className": "gallery-title-md"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "$t:home.visit.hours",
+                    "props": {
+                      "className": "gallery-meta"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "$t:home.visit.address",
+                    "props": {
+                      "className": "gallery-body"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "$t:home.visit.description",
+                    "props": {
+                      "className": "gallery-caption"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "A",
+                    "text": "$t:home.visit.cta",
+                    "props": {
+                      "href": "/visit",
+                      "className": "gallery-button-ghost"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-stack"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-section-heading"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "$t:home.news.section_kicker",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "$t:home.news.section_title",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-card-grid"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "iteration": {
+                      "source": "{{latest_news.data ?? []}}",
+                      "item_var": "item"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "Div",
+                        "props": {
+                          "className": "gallery-card gallery-empty-card"
+                        },
+                        "children": [
+                          {
+                            "type": "basic",
+                            "name": "Span",
+                            "text": "{{item.date ?? item.created_at_formatted ?? item.created_at ?? ''}}",
+                            "props": {
+                              "className": "gallery-meta"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "H3",
+                            "text": "{{item.title ?? $t:pages.fallback_title}}",
+                            "props": {
+                              "className": "gallery-title-md"
+                            }
+                          },
+                          {
+                            "type": "basic",
+                            "name": "P",
+                            "text": "{{item.summary ?? item.board_name ?? item.author_name ?? $t:pages.fallback_description}}",
+                            "props": {
+                              "className": "gallery-body"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "basic",
+            "name": "Section",
+            "props": {
+              "className": "gallery-surface gallery-hero"
+            },
+            "children": [
+              {
+                "type": "basic",
+                "name": "Div",
+                "props": {
+                  "className": "gallery-hero-copy"
+                },
+                "children": [
+                  {
+                    "type": "basic",
+                    "name": "Span",
+                    "text": "$t:home.cta.section_kicker",
+                    "props": {
+                      "className": "gallery-kicker"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "H2",
+                    "text": "$t:home.cta.section_title",
+                    "props": {
+                      "className": "gallery-title-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "P",
+                    "text": "$t:home.cta.description",
+                    "props": {
+                      "className": "gallery-body-lg"
+                    }
+                  },
+                  {
+                    "type": "basic",
+                    "name": "Div",
+                    "props": {
+                      "className": "gallery-actions"
+                    },
+                    "children": [
+                      {
+                        "type": "basic",
+                        "name": "A",
+                        "text": "$t:home.cta.visit_cta",
+                        "props": {
+                          "href": "/visit",
+                          "className": "gallery-button"
+                        }
+                      },
+                      {
+                        "type": "basic",
+                        "name": "A",
+                        "text": "$t:home.cta.contact_cta",
+                        "props": {
+                          "href": "/contact",
+                          "className": "gallery-button-ghost"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
